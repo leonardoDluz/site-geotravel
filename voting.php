@@ -6,6 +6,13 @@ session_start();
 $voto = $_POST["voto"];
 $usuario = $_POST["usuario"];
 
+$usuario = trim($usuario);
+if(empty($usuario)){
+    $_SESSION["mensagem"] == "Insira um Nome";
+    Header("Location:./vote.php");
+    die;
+}
+
 $comando = "INSERT INTO Votos (usuario, voto) VALUES('$usuario','$voto')";
 $resultado = mysqli_query($conexao, $comando);
 if(!$resultado){
