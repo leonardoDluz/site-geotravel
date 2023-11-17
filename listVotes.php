@@ -10,23 +10,14 @@ $resultadoGarantido = mysqli_query($conexao, $comandoGarantido);
 
 $registroCaprichoso = mysqli_fetch_assoc($resultadoCaprichoso);
 $registroGarantido = mysqli_fetch_assoc($resultadoGarantido);
+
+require './header.php';
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <session>
-        <div>
-            <span>O boi Caprichoso tem <?=$registroCaprichoso["votosCaprichoso"]?></span>
-        </div>
-        <div>
-            <span>O boi Garantido tem <?=$registroGarantido["votosGarantido"]?></span>
-        </div>
+    <session class="flex flex-col py-10 px-5 gap-y-10">
+        <span class="flex items-center text-center justify-center h-56 text-white text-2xl font-bold rounded shadow-md bg-blue-500">O boi Caprichoso tem <?=$registroCaprichoso["votosCaprichoso"]?></span>
+   
+        <span class="flex items-center text-center justify-center h-56 text-white text-2xl font-bold rounded shadow-md bg-red-500">O boi Garantido tem <?=$registroGarantido["votosGarantido"]?></span>
     </session>
 </body>
 </html>

@@ -1,15 +1,21 @@
-//Pop Up
-let caprichoso = document.querySelector(".caprichoso");
-let garantido = document.querySelector(".garantido");
+const popUp = document.querySelector("#pop-up");
 
-function voto(voto) {
-    if(voto == "caprichoso"){
-        caprichoso.style.display = "flex";
-    }else if(voto == "garantido"){
-        garantido.style.display = "flex";
-    }else if(voto == "Xcaprichoso"){
-        caprichoso.style.display = "none";
-    }else if(voto == "Xgarantido"){
-        garantido.style.display = "none";
-    }
+const botaoCaprichoso = document.querySelector("#caprichoso");
+const botaoGarantido = document.querySelector("#garantido");
+const botaoFechar = document.querySelector("#fechar");
+
+botaoCaprichoso.addEventListener('click', () => popUpVoto('caprichoso'));
+botaoGarantido.addEventListener('click', () => popUpVoto('garantido'));
+botaoFechar.addEventListener('click', () => fecharPopUpVoto());
+
+
+function popUpVoto(voto) {
+    const InputVoto = document.querySelector("#voto");
+
+    popUp.style.display = "flex";
+    InputVoto.value = voto;
+}
+
+function fecharPopUpVoto() {
+    popUp.style.display = "none";
 }

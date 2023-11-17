@@ -13,19 +13,12 @@ if($voto == "caprichoso"){
     $color = "blue";
 }
 
+require './header.php';
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="<?=$color?>">
-        <span>Obrigado por votar no <?=$voto?></span>
-        <a href="">Retornar a Página Inicial</a>
+    <div class="flex flex-col items-center text-center justify-center text-white h-48 mx-5 mt-16 p-6 gap-y-4 shadow-md rounded bg-<?=$color?>-500">
+        <h2 class="text-xl font-semibold">Obrigado por votar no <?=$voto?></h2>
+        <a class="bg-<?=$color?>-700 p-2 font-medium shadow-md rounded" href="">Retornar a Página Inicial</a>
     </div>
 </body>
 </html>
