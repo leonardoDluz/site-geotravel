@@ -4,9 +4,15 @@ session_start();
 
 require './header.php';
 ?>
-<main class="flex flex-col py-10 px-5 gap-y-10">
-    <button class="h-56 text-white text-3xl font-bold rounded shadow-md bg-blue-500" type="button" id="caprichoso">Caprichoso</button>
-    <button class="h-56 text-white text-3xl font-bold rounded shadow-md bg-red-500" type="button" id="garantido">Garantido</button>
+<main class="flex flex-col items-center py-10 px-5 gap-y-10">
+    <button class="p-7 max-w-fit flex flex-col items-center rounded shadow-md bg-blue-500" type="button" id="caprichoso">
+        <img class="h-60 rounded" src="./imgs/boi-caprichoso.jpg" alt="votar boi caprichoso">
+        <span class="mt-2 text-white text-3xl font-bold">Caprichoso</span>
+    </button>
+    <button class="p-7 max-w-fit flex flex-col items-center rounded shadow-md bg-red-500" type="button" id="garantido">
+        <img class="h-60 rounded" src="./imgs/boi-garantido.jpg" alt="votar boi garantido">
+        <span class="mt-2 text-white text-3xl font-bold">Garantido</span>
+    </button>
 
     <div class="hidden flex flex-col gap-y-3 bg-white rounded p-8 shadow-md" id="pop-up">
         <button class="px-2 py-1 text-white text-lg font-bold rounded shadow-md bg-red-500 max-w-fit" type="button" id="fechar">X</button>
