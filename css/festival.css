@@ -1,0 +1,186 @@
+.banner-parintins {
+    background-image: url('../imgs/banner_parintins.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    filter: grayscale(0.6);
+    justify-content: flex-end;
+}
+
+.banner-parintins > div {
+    margin: 50px;
+    background-color: rgba(0,0,0,0.5);
+    width: 35%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-parintins > div > span:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.banner-parintins > div > span {
+    color: var(--white);
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.attractions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    height: 65vh;
+    background-color: var(--gray-light);
+    flex-direction: column;
+}
+
+.attractions > span {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.attractions-cards {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.attractions-cards > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 28%;
+    background-color: var(--white);
+}
+
+.attractions-cards > div > img {
+    height: 43%;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.attractions-cards > div > span {
+    color: var(--gray-dark);
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 7px 15px;
+}
+
+.attractions-cards > div > span:last-child {
+    color: var(--gray-dark);
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.banner-festival {
+    background-image: url('../imgs/banner_festival.webp');
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    width: 100%;
+}
+
+.banner-festival > a {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    background: linear-gradient(90deg, var(--red) 0%, rgba(162,88,170,1) 50%, var(--blue) 100%);
+    border-radius: 25px;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+
+.banner-festival > a:hover {
+    transform: scale(1.1);
+}
+
+.banner-festival > a > img {
+    height: 85%;
+}
+
+.banner-festival > a > span {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 900px){
+    .banner-parintins {
+        height: 45vh;
+    }
+
+    .banner-parintins > div {
+        margin: 25px;
+    }
+
+    .banner-parintins > div > span:first-child {
+        font-size: 0.7rem;
+    }
+    
+    .banner-parintins > div > span {
+        margin: 5px;
+        font-size: 0.5rem;
+    }
+
+    .attractions {
+        padding: 7px;
+        height: 30vh;
+    }
+    
+    .attractions > span {
+        font-size: 1rem;
+    }
+
+    .attractions-cards {
+        width: 90%;
+    }
+
+    .attractions-cards > div {
+        border-radius: 10px;
+        width: 30%;
+    }
+    
+    .attractions-cards > div > img {
+        height: 30%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .attractions-cards > div > span {
+        font-size: 0.6rem;
+        padding: 5px 10px;
+    }
+    
+    .attractions-cards > div > span:last-child {
+        font-size: 0.4rem;
+        overflow: scroll;
+    }
+
+    .banner-festival {
+        height: 30vh;
+    }
+    
+    .banner-festival > a > span {
+        font-size: 0.7rem;
+    }
+}

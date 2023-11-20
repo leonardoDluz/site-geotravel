@@ -1,0 +1,34 @@
+header {
+    background-color: var(--gray-dark);
+    height: 10vh;
+    display: flex;
+    padding: 25px;
+    user-select: none;
+}
+
+header > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header > a > img {
+    height: 7vh;
+}
+
+header > a > span {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 900px) {
+    header > a > img {
+        height: 5vh;
+    }
+    
+    header > a > span {
+        font-size: 20px;
+    }
+}

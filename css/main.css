@@ -1,0 +1,19 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./festival.css');
+@import url('./vote.css');
+@import url('./message.css');
+
+:root {
+    --yellow: #ebe94f;
+    --green: #32c351;
+    --red: #E04643;
+    --red-dark: #a12624;
+    --blue: #439EE0;
+    --blue-dark: #246ba1;
+    --gray-light: #f1f1f1;
+    --gray-dark: #373737;
+    --black: #000;
+    --white: #fff;
+}
