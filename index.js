@@ -14,8 +14,16 @@ function popUpVoto(voto) {
 
     popUp.style.display = "flex";
     InputVoto.value = voto;
+    criarImagem(voto);
 }
 
 function fecharPopUpVoto() {
     popUp.style.display = "none";
+}
+
+function criarImagem(voto) {
+    const img = document.querySelector("#popUpImg");
+
+    img.setAttribute("src", `./imgs/boi-${voto}.jpg`);
+    img.setAttribute("alt", `votar no boi ${voto}`);
 }
