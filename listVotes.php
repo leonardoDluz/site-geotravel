@@ -16,10 +16,10 @@ require './header.php';
 ?>
     <session class="flex flex-col py-10 px-5 gap-y-10">
         <span class="flex items-center text-center justify-center h-56 text-white text-2xl font-bold rounded shadow-md bg-blue-500"
-        >Votos boi Caprichoso: <?=$registroCaprichoso["votosCaprichoso"]?></span>
+        >Votes boi Caprichoso: <?=$registroCaprichoso["votosCaprichoso"]?></span>
    
         <span class="flex items-center text-center justify-center h-56 text-white text-2xl font-bold rounded shadow-md bg-red-500"
-        >Votos boi Garantido: <?=$registroGarantido["votosGarantido"]?></span>
+        >Votes boi Garantido: <?=$registroGarantido["votosGarantido"]?></span>
     </session>
 </body>
 </html>
