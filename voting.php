@@ -3,17 +3,10 @@
 $conexao = require('./connection.php');
 session_start();
 
-$voto = $_POST["voto"];
-$usuario = $_POST["usuario"];
+$voto = $_GET["voto"];
 
-$usuario = trim($usuario);
-if(empty($usuario)){
-    $_SESSION["mensagem"] == "Insira um Nome";
-    Header("Location:./vote.php");
-    die;
-}
 
-$comando = "INSERT INTO Votos (usuario, voto) VALUES('$usuario','$voto')";
+$comando = "INSERT INTO Votos ( voto) VALUES('$voto')";
 $resultado = mysqli_query($conexao, $comando);
 if(!$resultado){
     $_SESSION["mensagem"] = "Algo Deu Errado ao Votar, Tente Novamente Mais Tarde";
